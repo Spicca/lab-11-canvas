@@ -1,0 +1,49 @@
+</<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload=draw()>
+<canvas id="sketch" width="1000" height="1000">
+</canvas>
+<script type="text/javascript">
+
+function draw(){
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillRect(150, 10, 60, 40);
+	context.fillStyle = 'blue';
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillRect(100, 30, 150, 50);
+	context.fillStyle = 'blue';
+
+	}	
+function circle(){
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+
+	context.beginPath();
+	context.arc(120, 95, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fillStyle = 'red';
+	context.fill();
+	
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.beginPath();
+	context.arc(230, 95, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fillStyle = 'red';
+	context.fill();
+}
+
+draw();
+circle();
+
+
+</script>
+
+</body>
+</html>
