@@ -1,0 +1,75 @@
+</<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload=draw()>
+<canvas id="sketch" width="1000" height="1000">
+</canvas>
+<script type="text/javascript">
+function draw(){
+	x=10
+	y=110
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = 'blue';
+	context.fillRect(x, 10, 50, 50);
+	context.beginPath();
+	context.fillStyle = 'red';
+	context.arc(y, 35, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = 'blue';
+	context.fillRect(x+140, 10, 50, 50);
+	context.beginPath();
+	context.fillStyle = 'red';
+	context.arc(y+140, 35, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = 'blue';
+	context.fillRect(x+290, 10, 50, 50);
+	context.beginPath();
+	context.fillStyle = 'red';
+	context.arc(y+290, 35, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = 'blue';
+	context.fillRect(x+440, 10, 50, 50);
+	context.beginPath();
+	context.fillStyle = 'red';
+	context.arc(y+440, 35, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = 'blue';
+	context.fillRect(x+590, 10, 50, 50);
+	context.beginPath();
+	context.fillStyle = 'red';
+	context.arc(y+590, 35, 30, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+
+
+}
+
+
+draw();
+
+
+
+</script>
+
+</body>
+</html>
